@@ -1,0 +1,22 @@
+@use '../../styles/theme.scss' as *;
+@use '../../styles/breakpoints.scss' as breakpoints;
+
+.navbar {
+  padding: 19px 0;
+  background: $tertiary-background;
+  box-shadow: $shadow-1;
+  .nav-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .app-title {
+      color: $primary-text;
+      font-weight: 600;
+      font-size: 1.2rem;
+      @include breakpoints.devices(sm) {
+        font-size: 16px;
+      }
+    }
+  }
+}
